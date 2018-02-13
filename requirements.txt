@@ -1,5 +1,6 @@
 Django==1.11
 djangorestframework==3.7.7
+gunicorn==19.7.1
 nltk==3.2.5
 numpy==1.14.0
 pandas==0.22.0
