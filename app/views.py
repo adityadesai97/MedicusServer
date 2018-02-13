@@ -14,9 +14,9 @@ from rest_framework.decorators import api_view
 def getRating(request, to_train):
     sentence = request.POST.get('sentence')
     if to_train == 'train':
-        # rating = classify(sentence, 1)
-        rating = 1
+        rating = classify(sentence, 1)
+        # rating = 1
     elif to_train == 'no_train':
-        # rating = classify(sentence, 0)
-        rating = 0
+        rating = classify(sentence, 0)
+        # rating = 0
     return JsonResponse({'rating':str(rating)})
