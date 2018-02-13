@@ -19,5 +19,5 @@ from app import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^get_rating/(?P<to_train>[\w\-]+)/$', views.getRating, name = 'get_rating'),
+    url(r'^get_rating/(?P<to_train>[\w\-]+)$', views.getRating, name = 'get_rating'),
 ]
